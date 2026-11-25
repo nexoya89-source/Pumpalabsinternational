@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pumpalabs.netlify.app/sitemap.xml
