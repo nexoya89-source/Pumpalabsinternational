@@ -30,16 +30,24 @@ npm run lint
 npm run build
 ```
 
+## Publishing on GitHub Pages (`nexoya89-source/Pumpalabsinternational`)
+
+Public URL: `https://nexoya89-source.github.io/Pumpalabsinternational/`
+
+1. Push all repository files (including `vite.config.ts`, `package-lock.json`, `.github/workflows/deploy.yml`, `public/`, and `src/`) to the `main` branch of `nexoya89-source/Pumpalabsinternational`.
+2. In GitHub, open **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
+3. The workflow `.github/workflows/deploy.yml` runs automatically on every push to `main` (`npm ci`, `npm run build`, and deploys `dist/`).
+
 ## Publishing on Netlify from Android
 
-You can publish this site to `https://pumpalabs.netlify.app/` directly from an Android phone without paid tools or a desktop PC:
+You can also deploy to Netlify from an Android phone without paid tools or a desktop PC:
 
 ### Option A — Deploy via GitHub + Netlify (Recommended)
 
 1. Download or export the project ZIP from AI Studio to your Android device (**Downloads** folder).
 2. Extract the ZIP using your Android **Files** app (or **ZArchiver**).
 3. Open **Chrome** on Android, log into **GitHub** (`github.com`), and create or open your repository.
-4. Upload the extracted project files (`index.html`, `package.json`, `netlify.toml`, `tsconfig.json`, `types.d.ts`, `public/`, `src/`, `README.md`) to the repository (exclude `node_modules/` and `dist/`).
+4. Upload the extracted project files (`index.html`, `package.json`, `package-lock.json`, `vite.config.ts`, `.github/workflows/deploy.yml`, `netlify.toml`, `tsconfig.json`, `types.d.ts`, `public/`, `src/`, `README.md`) to the repository (exclude `node_modules/` and `dist/`).
 5. Open **app.netlify.com** in Chrome on Android and sign in.
 6. Select **Add new site → Import an existing project → GitHub** and pick your repository.
 7. Verify the build settings (detected automatically from `netlify.toml`):

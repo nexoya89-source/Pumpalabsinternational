@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pumpalabs.netlify.app/sitemap.xml
+Sitemap: https://nexoya89-source.github.io/Pumpalabsinternational/sitemap.xml
